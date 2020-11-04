@@ -1,6 +1,6 @@
 {
   "name": "send-js-errors-to-backend",
-  "version": "0.0.2",
+  "version": "0.0.3-0",
   "description": "Small JS class that sends the application errors to the backend URL that you specify",
   "main": "src/index.js",
   "scripts": {
