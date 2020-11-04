@@ -1,0 +1,20 @@
+{
+  "name": "send-js-errors-to-backend",
+  "version": "1.0.0",
+  "description": "Small JS class that sends the application errors to the backend URL that you specify",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JSErrors",
+    "LoggingErrors",
+    "ErrorMonitoring"
+  ],
+  "author": "dhbalaji",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monatheoctocat/my_package.git"
+  },
+}
