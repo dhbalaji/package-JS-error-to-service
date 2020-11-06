@@ -25,6 +25,13 @@ class dhbalajiLogger {
         return;
     }
 
+    getUserAgent() {
+        if (window && window.navigator) {
+            const {doNotTrack, cookieEnabled, language, userAgent} = window.navigator;
+            return {doNotTrack, cookieEnabled, language, userAgent};
+        }
+    }
+
     init() {
         window.onerror = (message, source, lineno, colno, error) => {
             const errorObj = {
@@ -33,7 +40,8 @@ class dhbalajiLogger {
                 lineno,
                 colno,
                 error,
-                date: new Date()
+                date: new Date(),
+                userAppSettings: this.getUserAgent()
             };
             const payload = Object.assign({}, { ...this.headerObj }, {
                 body: JSON.stringify(errorObj)
